@@ -18,11 +18,13 @@ This script utilizes the `sigm_fit` function contributed to the MATLAB Central F
 ---
 
 ### Droplet Evaporation Code
-The code in the `Droplet_Evaporation` folder calculates the evaporation of droplets throughout their residence time in the chamber based on an initial droplet size and chamber supersaturation. Droplet evaporation calcualtions are based on [Seinfeld and Pandis 3e (2016)](https://www.wiley.com/en-us/Atmospheric+Chemistry+and+Physics:+From+Air+Pollution+to+Climate+Change,+3rd+Edition-p-9781118947401) and [Lohmann et al. (2016)](https://www.cambridge.org/core/books/an-introduction-to-clouds/F5A8096E7A3BD5C8FFD9208248DD1839).
+The code in the `Droplet_Evaporation` folder calculates the evaporation of droplets throughout their residence time in the chamber based on an initial droplet size and chamber supersaturation. Droplet evaporation calcualtions are based on [Lohmann et al. (2016)](https://www.cambridge.org/core/books/an-introduction-to-clouds/F5A8096E7A3BD5C8FFD9208248DD1839).
 
-The model is split into three files. The main file to call is `DropletEvap.m`. The other two files are supporting functions called by `DropletEvap.m`. The main calculation occurs in `easyrt.m`, which estimates the radius of a droplet as a function of time based on Lohmann et al. (2016), equation 7.29. Equation 7.29 from Lohmann et al. (2016), is reproduced below.
+The model is split into three files. The main file to call is `DropletEvap.m`. The other two files are supporting functions called by `DropletEvap.m`. The main calculation occurs in `easyrt.m`, which estimates the radius of a droplet as a function of time based on Lohmann et al. (2016), equation 7.29. Equation 7.29 from Lohmann et al. (2016), is reproduced below, along with Equations 7.23 and 7.25 which are relied upon for 7.29.
 
+<img src="./Droplet_Evaporation/droplet_evaporation.png" width="200" />
 
+In this equation, *r(t)* is the droplet radius as a function of time. *r<sub>0</sub>* is the initial droplet radius, *S* is the supersaturation condition, *F<sub>k</sub>* is the thermodynamic term related to the latent heat absorption due to evaporation (Equation 7.23 of Lohmann et al. (2016)), *F<sub>d</sub>* is related to the saturation vapor pressure and diffusion (Equation 7.25 of Lohmann et al. (2016)), and *t* is time.
 
 #### Requirements
 * MATLAB License
