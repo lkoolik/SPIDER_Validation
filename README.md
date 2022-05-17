@@ -13,7 +13,7 @@ The code in the `PCVI_Transmission_Efficiency` folder calculates the transmissio
 * MATLAB Statistics and Machine Learning Toolbox
 
 #### Acknowledgments
-This script utilizes the `sigm_fit` function contributed to the MATLAB Central File Exchange by User R P. For more information about the `sigm_fit` function, see the File Exchange here: https://www.mathworks.com/matlabcentral/fileexchange/42641-sigm_fit.
+This script utilizes the `sigm_fit` function contributed to the MATLAB Central File Exchange by User R P. For more information about the `sigm_fit` function, see the [File Exchange](https://www.mathworks.com/matlabcentral/fileexchange/42641-sigm_fit).
 
 ---
 
@@ -22,9 +22,11 @@ The code in the `Droplet_Evaporation` folder calculates the evaporation of dropl
 
 The model is split into three files. The main file to call is `DropletEvap.m`. The other two files are supporting functions called by `DropletEvap.m`. The main calculation occurs in `easyrt.m`, which estimates the radius of a droplet as a function of time based on Lohmann et al. (2016), equation 7.29. Equation 7.29 from Lohmann et al. (2016), is reproduced below, along with Equations 7.23 and 7.25 which are relied upon for 7.29.
 
-<img src="./Droplet_Evaporation/droplet_evaporation.png" width="200" />
+<img src="./Droplet_Evaporation/droplet_evaporation_equations.png" width="200" />
 
-In this equation, *r(t)* is the droplet radius as a function of time. *r<sub>0</sub>* is the initial droplet radius, *S* is the supersaturation condition, *F<sub>k</sub>* is the thermodynamic term related to the latent heat absorption due to evaporation (Equation 7.23 of Lohmann et al. (2016)), *F<sub>d</sub>* is related to the saturation vapor pressure and diffusion (Equation 7.25 of Lohmann et al. (2016)), and *t* is time.
+In this equation, *r(t)* is the droplet radius as a function of time. *r<sub>0</sub>* is the initial droplet radius, *S* is the supersaturation condition, *F<sub>k</sub>* is the thermodynamic term related to the latent heat absorption due to evaporation (Equation 7.23 of Lohmann et al. (2016)), *F<sub>d</sub>* is related to the saturation vapor pressure and diffusion (Equation 7.25 of Lohmann et al. (2016)), and *t* is time. In the supporting equations, *L<sub>v</sub>* is the latent heat of vaporization, *K* is an empirical coefficient based on temperature, *R<sub>v</sub>* is the gas constant for water vapor, *T* is the temperature, *D<sub>v</sub>* is the vapor diffusion coefficient, and *e<sub>s,w</sub>* is the equilibrium vapor pressure over a solution droplet based on Clausius-Claperyon. 
+
+Finally, the `evap_figure.m` script plots the four scenarios of supersaturation.
 
 #### Requirements
 * MATLAB License
