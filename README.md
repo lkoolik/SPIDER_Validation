@@ -6,7 +6,7 @@ For more information, see Koolik et al. (2022): https://doi.org/10.5194/amt-2021
 ---
 
 ### PCVI Transmission Efficiency Code
-The code in the `PCVI_Transmission_Efficiency` folder calculates the transmission efficiency and D<sub>50</sub> for the PCVI. The script assumes that the input data come from the TSI Aerosol Instrument Manager (AIM) software. 
+The code in the `PCVI_Transmission_Efficiency` folder calculates the transmission efficiency and D<sub>50</sub> for the PCVI. The script assumes that the input data come from the [TSI Aerosol Instrument Manager (AIM) software](https://tsi.com/software/tsi-software-and-firmware-wizard/). 
 
 #### Requirements
 * MATLAB License
