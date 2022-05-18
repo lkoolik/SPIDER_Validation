@@ -6,7 +6,7 @@ For more information, see Koolik et al. (2022): https://doi.org/10.5194/amt-2021
 ---
 
 ### PCVI Transmission Efficiency Code
-The code in the `PCVI_Transmission_Efficiency` folder calculates the transmission efficiency and D<sub>50</sub> for the PCVI. The script assumes that the input data come from the [TSI Aerosol Instrument Manager (AIM) software](https://tsi.com/software/tsi-software-and-firmware-wizard/). 
+The code in the `PCVI_Transmission_Efficiency` folder calculates the transmission efficiency and D<sub>50</sub> for the PCVI. The script assumes that the input data come from the [TSI Aerosol Instrument Manager (AIM) software](https://tsi.com/software/tsi-software-and-firmware-wizard/) recording from an Optical Particle Sizer. 
 
 #### Requirements
 * MATLAB License
@@ -14,6 +14,33 @@ The code in the `PCVI_Transmission_Efficiency` folder calculates the transmissio
 
 #### Acknowledgments
 This script utilizes the `sigm_fit` function contributed to the MATLAB Central File Exchange by User R P. For more information about the `sigm_fit` function, see the [File Exchange](https://www.mathworks.com/matlabcentral/fileexchange/42641-sigm_fit).
+
+---
+
+### PCVI Calibration Code
+The code in the `PCVI_Calibration` folder calculates the transmission efficiency and D<sub>50</sub> for the PCVI. The script assumes that the input data come from the [TSI Aerosol Instrument Manager (AIM) software](https://tsi.com/software/tsi-software-and-firmware-wizard/) recording from an Optical Particle Sizer. 
+
+#### Requirements
+* Python 3
+* `glob`, `os`, `re`, `pandas`, `datetime`, `numpy`, `seaborn`, `matplotlib`, and `scipy` libraries.
+
+---
+
+### L-PCVI Transmission Efficiency Code
+The code in the `LPCVI_Transmission_Efficiency` folder calculates the transmission efficiency and D<sub>50</sub> for the L-PCVI. The script assumes that the input data come from the [TSI Aerosol Instrument Manager (AIM) software](https://tsi.com/software/tsi-software-and-firmware-wizard/) recording from an Aerodynamic Particle Sizer. 
+
+#### Requirements
+* Python 3
+* `os`, `re`, `pandas`, `datetime`, `numpy`, `seaborn`, `matplotlib`, and `scipy` libraries.
+
+---
+
+### SPIDER System Transmission Efficiency Code
+The code in the `SPIDER_Transmission_Efficiency` folder calculates the transmission efficiency and D<sub>50</sub> for the complete inlet system. The script assumes that the input data come from the [TSI Aerosol Instrument Manager (AIM) software](https://tsi.com/software/tsi-software-and-firmware-wizard/) recording from an Aerodynamic Particle Sizer. 
+
+#### Requirements
+* Python 3
+* `os`, `re`, `runpy`, `pandas`, `datetime`, `numpy`, `seaborn`, `matplotlib`, and `scipy` libraries.
 
 ---
 
