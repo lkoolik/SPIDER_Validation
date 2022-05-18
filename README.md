@@ -57,3 +57,13 @@ Finally, the `evap_figure.m` script plots the four scenarios of supersaturation.
 
 #### Requirements
 * MATLAB License
+
+---
+
+### Velocity and Weber Number Model Code
+The code in the `Weber_Calculation` folder calculates the gas and particle velocities as well as the Weber number as a function of distance along the CVI axis. The calculations are based on [Pekour and Cziczo (2011)](https://doi.org/10.1080/02786826.2011.558942).
+
+The model can be run through two main scripts: (1) `Weber_Calc.m` and (2) `Weber_Model.m`. These scripts call the other functions in order to estimate gas velocity, particle velocity, and Weber number. The figure in the Supplement to Koolik et al. (2022), is generated using the `Weber_Model.m` script. To switch between the 3D printed PCVI and L-PCVI, toggle the commented out lines in the "Initial Parameters" section. Note that the scripts assume a smooth angled inlet nozzle for both CVIs, which differs from the CVI in Pekour and Cziczo (2011).
+
+#### Requirements
+* MATLAB License
